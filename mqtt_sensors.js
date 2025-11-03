@@ -11,5 +11,7 @@ function draw() {
 
 const threshold = 10;
 function touchStarted() {
+  console.log("Touch registreret. Forsøger at opsætte orientering.");
   setupOrientation(threshold);
+  console.log("Touch registreret. Forsøger at opsætte orientering.");
 }
