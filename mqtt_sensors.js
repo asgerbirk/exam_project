@@ -1,8 +1,6 @@
 const threshold = 10;
 
-function setup() {
-  createCanvas(windowWidth, windowHeight); // Opretter et canvas
-}
+function setup() {}
 
 function draw() {
   // --- Aktiveret visuel feedback ---
