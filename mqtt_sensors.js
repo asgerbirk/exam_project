@@ -21,7 +21,7 @@ function draw() {
     text("Status: Tryk for at aktivere sensor", 10, 90); // Viser instruktion
   }
 }
-
+const threshold = 10;
 function touchStarted() {
   setupOrientation(threshold);
   console.log("Touch started! Forsøger at få sensor-tilladelse.");
