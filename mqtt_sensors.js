@@ -1,10 +1,12 @@
+const threshold = 10;
+
 function setup() {
   createCanvas(windowWidth, windowHeight); // Opretter et canvas
 }
 
 function draw() {
   // --- Aktiveret visuel feedback ---
-  background(220); // Giver baggrundsfarve
+  background(220);
   textSize(24);
   text("MQTT: OK", 10, 30); // Viser, at MQTT er forbundet
 
@@ -21,8 +23,9 @@ function draw() {
     text("Status: Tryk for at aktivere sensor", 10, 90); // Viser instruktion
   }
 }
-const threshold = 10;
 function touchStarted() {
   setupOrientation(threshold);
+  // TILFØJ DENNE LINJE:
+  background(255, 0, 0); // Gør baggrunden RØD, når funktionen kører
   console.log("Touch started! Forsøger at få sensor-tilladelse.");
 }
